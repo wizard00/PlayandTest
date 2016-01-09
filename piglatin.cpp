@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 
-using namesapce std;
+using namespace std;
 //letter before vowel are placed at the end, + ay
 //if starting with vowel, +yay
-
+string pigLatin(string s);
+bool isvowel(char c);
 int main(int argc, char const *argv[])
 {
-	/* code */
+	cout<<pigLatin("pig")<<endl;
 	return 0;
 }
 
@@ -29,5 +30,13 @@ string pigLatin(string s) {
 
 	res+="ay";
 	return res;
+}
 
+bool isvowel(char c) {
+	char vowel[] = {'a','e','i','o','u'};
+	for(int i = 0; i<5; i++){
+		if(vowel[i]==c)
+			return true;
+	}
+	return false;
 }
