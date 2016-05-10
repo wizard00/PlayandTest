@@ -9,6 +9,8 @@ bool isvowel(char c);
 int main(int argc, char const *argv[])
 {
 	cout<<pigLatin("pig")<<endl;
+	cout<<pigLatin("eat")<<endl;
+	cout<<pigLatin("wa")<<endl;
 	return 0;
 }
 
